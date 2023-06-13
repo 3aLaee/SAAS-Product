@@ -1,0 +1,89 @@
+.custom-header {
+  background-color: transparent;
+  border: none;
+}
+
+.header-container {
+  
+
+  background-color: transparent;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-button {
+  
+  margin-right: 10px;
+  padding: 13px 26px; /* Adjust the padding to increase button size */
+  font-size: 16px;
+  color: white;
+  background-color: #1784ac;
+  
+}
+
+.header-button2{
+  margin-right: 10px;
+  padding: 9px 10px; /* Adjust the padding to increase button size */
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.001); /* Add a thin box shadow */
+
+}
+
+.header-button2:hover{
+  background-color: rgb(204, 230, 235);
+  color: white;
+}
+
+.header-button:hover {
+  background-color: #073d4b; /* Darker blue color on hover */
+  border-color: #195ac8; /* Darker blue color on hover */
+}
+
+.custom-header .nav-link {
+  text-align: center;
+  transition: color 0.3s;
+  
+}
+
+.custom-header .nav-link:hover {
+  color: #1784ac;
+  
+  background-color: transparent;
+
+}
+
+.logo {
+  max-height: 50px;
+  margin-left: auto;
+  margin-right: 150px;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  
+  body{
+    background-color: white;
+  }
+  
+    .header-container {
+      width: 100%;
+      padding: 10px;
+      background-color: white;
+      background-color: transparent;
+
+    }
+    .header-buttons {
+      display: none; /* Hide the buttons */
+    }
+    .logo {
+      margin-left: auto;
+    }
+}
+
+
