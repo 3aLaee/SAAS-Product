@@ -1,15 +1,27 @@
 .banner-container {
   padding: 20px;
-}
+  width: 100%;
+margin-right: 0px;}
 
 .banner-left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+.section-title {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.banner-wrapper {
+  background: linear-gradient(to top, #d4e8f8, #ffffff);
+  padding: 20px;
+}
 
 .banner-image {
-  width: 700px;
+  margin-top: 78px;
+  margin-left: 15px;
+  width: 550px;
   height: auto;
   max-width: 100%;
 }
@@ -27,16 +39,18 @@
   font-size: 80px;
   font-weight: bold;
   font-family: 'Noto Kufi Arabic', sans-serif;
-  margin-top: 50px;
+  margin-top: 105px;
   background: linear-gradient(to right, #ff4b1f, #007bff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-right: 55px;
 }
 
 .banner-paragraph {
   font-size: 19px;
-  margin-top: 42px;
+  margin-top: 50px;
   font-family: 'Noto Kufi Arabic', sans-serif;
+  margin-right: 62px;
 }
 
 .banner-mark-container {
@@ -56,7 +70,7 @@
   height: 10px;
   background-color: green;
   border-radius: 50%;
-  margin-left: 5px; /* Adjust margin to push the mark to the right */
+  margin-left: 5px;
 }
 
 .banner-mark-text {
@@ -64,68 +78,100 @@
   font-family: 'Noto Kufi Arabic', sans-serif;
   margin-top: 5px;
   text-align: right;
-  line-height: 2; /* Add line-height property */
+  line-height: 2;
 }
 
 .banner-cta {
   margin-top: 35px;
   display: flex;
   justify-content: center;
+  margin-bottom: 2px;
 }
 
 .cta-button {
-  padding: 7px 12px;
+  padding: 10px 36px;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #007bff; /* Adjust to match your desired button color */
+  background-color: #007bff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-right: 250px;
+  margin-right: 70px;
+  margin-left: auto;
+  margin-top: 6px;
+  margin-bottom: 2px;
 }
 
 .cta-button:hover {
-  background-color: #0056b3; /* Adjust to match the hover color */
+  background-color: #0056b3;
 }
 
 .cta-button:focus {
   outline: none;
 }
 
+.sectio {
+  font-size: 35px;
+  font-weight: bold;
+  color: #001a52;
+  margin-left: 190px;
+  text-align: right;
+  margin-top: 60px;
+  margin-right: 65px;
+ 
+}
 /* Media Query for Mobile Devices */
-/* Media Query for Mobile Devices */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
-  .banner-title {
-    font-size: 80px;
-    font-weight: bold;
-    font-family: 'Noto Kufi Arabic', sans-serif;
+  .sectio {
+   font-size: 35px;
+   font-weight: bold;
+   color: #001a52;
+   margin-right: 17px;
+   margin-left: 5px;
+   
+  }
+
+  .banner-container {
+    padding: 20px;
+    height: auto;
     margin-top: 0px;
-    background: linear-gradient(to right, #ff4b1f, #007bff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   
+  .banner-left,
+  .banner-right {
+    text-align: right;
+    margin-right: 0;
+  }
+
+  .banner-title {
+    font-size: 40px;
+    margin-top: 30px;
+    text-align: right;
+    margin-right: 0;
+  }
 
   .banner-image {
-    margin-top: 0px;
-    width: 300px;
-    height: auto;
-    max-width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .banner-paragraph {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+
+  .banner-cta {
+    margin-top: 20px;
   }
 
   .cta-button {
-    padding: 13px 26px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #007bff; /* Adjust to match your desired button color */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /*center button*/
-    margin-right: 100px;
+    padding: 10px 26px;
+    font-size: 14px;
+    margin-left: 1px;
+    margin-right: 0;
   }
 }
-

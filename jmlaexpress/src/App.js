@@ -5,9 +5,19 @@ import Login from './Login';
 import SignUp from './SignUp';
 import Feature from './Feature';
 import Stores from './Stores';
-import Banner from './Banner'; // Import the Banner component
+import Banner from './Banner';
+import Steps from './Steps';
 import './App.css';
+import ChooseUs from './ChooseUs';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Stats from './Stats';
+import Slider from './Slider';
+
+
+
+
+
+
 
 const App = () => {
   return (
@@ -20,7 +30,16 @@ const App = () => {
           <Route path="/feature" component={Feature} />
           <Route path="/stores" component={Stores} />
         </Routes>
-        <Banner /> {/* Render the Banner component */}
+        <Banner />
+        <ChooseUs />
+        <Stats />
+        <Steps />
+       
+        <Slider />
+
+        
+
+        
       </div>
     </Router>
   );
